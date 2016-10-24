@@ -2,16 +2,26 @@
 
   <%= image_tag "home/logo.png" %>
 
-  <div class="reserve">Réserver</div>
+  <div class="reserve">
+    <svg width="100%" height="100%" shape-rendering="geometricPrecision">
+      <text shape-rendering="geometricPrecision" fill="transparent" font-size="50" font-weight="600" y="50%" x="50%" text-anchor="middle" stroke-width="3" stroke="white">Réserver</text>
+    </svg>
+  </div>
 
   <header>
     <nav>
-      <a>Visiter</a>
-      <a>Détails</a>
-      <a>Agenda</a>
-      <a>Contact</a>
+      <%= render "pages/buttons/new", text: "Visiter", url: "visit" %>
+      <%= render "pages/buttons/new", text: "Détails", url: "details" %>
+      <%= render "pages/buttons/new", text: "Agenda", url: "agenda" %>
+      <%= render "pages/buttons/new", text: "Contact", url: "contact" %>
     </nav>
 
   </header>
 
+</section>
+
+<section id="page">
+  <div class="wrap previous"></div>
+  <div class="wrap current"><%= render_page %></div>
+  <div class="wrap next"></div>
 </section>

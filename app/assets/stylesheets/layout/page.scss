@@ -1,0 +1,38 @@
+#container section#page {
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    transition: left 1s;
+  }
+
+  .wrap.current {
+    left: 0;
+  }
+
+  .wrap.next {
+    left: 100%;
+  }
+
+  .wrap.previous {
+    left: -100%;
+  }
+
+  .content {
+    width: 80%;
+  }
+
+  .forward {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .backward {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
