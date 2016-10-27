@@ -2,9 +2,13 @@ module PagesHelper
   PAGES = %w(visit details agenda contact)
 
   def render_page
+    render "pages/#{current_page}"
+  end
+
+  def current_page
     params[:page] ||= "visit"
     if params[:page].in? PAGES
-      render "pages/#{params[:page]}"
+      return params[:page]
     end
   end
 
