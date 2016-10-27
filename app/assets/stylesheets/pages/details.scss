@@ -1,7 +1,6 @@
 #page.details .wrap {
   table {
     width: 100%;
-    margin: 20px 0;
     tr {
       &:nth-child(odd) {
         td:nth-child(2) {
@@ -16,5 +15,8 @@
         background: rgba(255, 215, 0, 0.27);
       }
     }
+  }
+  img.doc {
+    width: 80px;
   }
 }

@@ -23,17 +23,27 @@
 
   .content {
     padding: 20px 150px;
+    width: 100%;
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "pressura", sans-serif;
+    }
+    h2 {
+      padding: 45px 0 30px 0;
+      font-family: "pressura", sans-serif;
+    }
   }
 
   .forward {
     position: absolute;
-    bottom: 0;
+    top: 15px;
     right: 0;
   }
 
   .backward {
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 0;
   }
 }
