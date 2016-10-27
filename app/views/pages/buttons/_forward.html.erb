@@ -1,1 +1,6 @@
-<div class="forward"><%= link_to text, "load/next/#{url}", method: :put, remote: true, data: { url: url } %></div>
+<div class="forward">
+  <%= link_to "load/next/#{url}", method: :put, remote: true, data: { url: url } do %>
+    <%= text %>
+    <%= image_tag image_url "layout/next" %>
+  <% end %>
+</div>

@@ -1,1 +1,6 @@
-<div class="backward"><%= link_to text, "load/previous/#{url}", method: :put, remote: true, data: { url: url } %></div>
+<div class="backward">
+  <%= link_to "load/previous/#{url}", method: :put, remote: true, data: { url: url } do %>
+    <%= image_tag image_url "layout/back.svg" %>
+    <%= text %>
+  <% end %>
+</div>

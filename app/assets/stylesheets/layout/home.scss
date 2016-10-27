@@ -12,6 +12,11 @@
   align-items: center;
 
   .reserve {
+    &:hover {
+      -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+      animation: neon2 1s ease-in-out infinite alternate;
+    }
   }
 
   header {
