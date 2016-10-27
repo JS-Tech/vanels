@@ -5,3 +5,8 @@ html, body {
 body {
   overflow-x: hidden;
 }
+
+/* necessary for the agenda in order to use dayClick event */
+#calendar {
+  overflow-x: auto;
+}

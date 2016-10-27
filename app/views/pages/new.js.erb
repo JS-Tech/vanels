@@ -1,1 +1,3 @@
 $("#container section#page .wrap.current").html('<%= j render "pages/#{params[:page]}" %>');
+
+document.dispatchEvent(pageLoad);

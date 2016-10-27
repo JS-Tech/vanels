@@ -1,0 +1,12 @@
+fr:
+  helpers:
+    submit:
+      reservation:
+        create: "Réserver"
+  attributes:
+    firstname: "Prénom"
+    lastname: "Nom de famille"
+    address: "Adresse"
+    zip: "NPA"
+    city: "Ville"
+    phone: "Téléphone"

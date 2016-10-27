@@ -3,6 +3,7 @@ var $current = $("#container section#page .wrap.current"),
 
 // add new content
 $next.html('<%= j render "pages/#{params[:page]}" %>');
+document.dispatchEvent(pageLoad);
 
 // slide
 $current.removeClass("current").addClass("previous");
