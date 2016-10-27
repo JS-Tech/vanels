@@ -1,0 +1,41 @@
+section#page.agenda {
+
+  #new_reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .row {
+      display: flex;
+
+      margin-top: 20px;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        label, input {
+          margin: 0 0 20px 20px !important;
+        }
+
+      }
+
+    }
+
+    label {
+      margin: 20px 0 5px 0;
+    }
+
+    input[type=text], input[type=number] {
+      height: 25px;
+    }
+
+    input[type=submit] {
+      margin-top: 20px;
+      padding: 15px;
+    }
+  }
+
+}

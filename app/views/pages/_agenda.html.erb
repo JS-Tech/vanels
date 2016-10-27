@@ -13,25 +13,35 @@
       <%= f.date_field :date %>
 
       <%= f.label :description %>
-      <%= f.text_area :description %>
+      <%= f.text_area :description, cols: 40, rows: 5 %>
 
-      <%= f.label :firstname %>
-      <%= f.text_field :firstname %>
+      <div class="row">
 
-      <%= f.label :lastname %>
-      <%= f.text_field :lastname %>
+        <div class="column">
+          <%= f.label :firstname %>
+          <%= f.label :email %>
+          <%= f.label :address %>
+        </div>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+        <div class="column">
+          <%= f.text_field :firstname %>
+          <%= f.text_field :email %>
+          <%= f.text_field :address %>
+        </div>
 
-      <%= f.label :phone %>
-      <%= f.text_field :phone %>
+        <div class="column">
+          <%= f.label :lastname %>
+          <%= f.label :phone %>
+          <%= f.label :zip %>
+        </div>
 
-      <%= f.label :address %>
-      <%= f.text_field :address %>
+        <div class="column">
+          <%= f.text_field :lastname %>
+          <%= f.text_field :phone %>
+          <%= f.number_field :zip %>
+        </div>
 
-      <%= f.label :zip %>
-      <%= f.number_field :zip %>
+      </div>
 
       <%= f.label :city %>
       <%= f.text_field :city %>
