@@ -1,58 +1,60 @@
-<%= render "pages/buttons/backward", text: "Détails", url: "details" %>
+<div class="wrap agenda">
+  <%= render "pages/buttons/backward", text: "Détails", url: "details" %>
 
-<div class="content">
-  <h1>Agenda</h1>
-  <div id="calendar"></div>
+  <div class="content">
+    <h1>Agenda</h1>
+    <div id="calendar"></div>
 
-  <div id="reservation">
+    <div id="reservation">
 
-    <div id="errors"></div>
+      <div id="errors"></div>
 
-    <%= form_for Reservation.new, remote: true do |f| %>
+      <%= form_for Reservation.new, remote: true do |f| %>
 
-      <%= f.label :date %>
-      <%= f.date_field :date %>
+        <%= f.label :date %>
+        <%= f.date_field :date %>
 
-      <%= f.label :description %>
-      <%= f.text_area :description, cols: 40, rows: 5 %>
+        <%= f.label :description %>
+        <%= f.text_area :description, cols: 40, rows: 5 %>
 
-      <div class="row">
+        <div class="row">
 
-        <div class="column">
-          <%= f.label :firstname %>
-          <%= f.label :email %>
-          <%= f.label :address %>
+          <div class="column">
+            <%= f.label :firstname %>
+            <%= f.label :email %>
+            <%= f.label :address %>
+          </div>
+
+          <div class="column">
+            <%= f.text_field :firstname %>
+            <%= f.text_field :email %>
+            <%= f.text_field :address %>
+          </div>
+
+          <div class="column">
+            <%= f.label :lastname %>
+            <%= f.label :phone %>
+            <%= f.label :zip %>
+          </div>
+
+          <div class="column">
+            <%= f.text_field :lastname %>
+            <%= f.text_field :phone %>
+            <%= f.number_field :zip %>
+          </div>
+
         </div>
 
-        <div class="column">
-          <%= f.text_field :firstname %>
-          <%= f.text_field :email %>
-          <%= f.text_field :address %>
-        </div>
+        <%= f.label :city %>
+        <%= f.text_field :city %>
 
-        <div class="column">
-          <%= f.label :lastname %>
-          <%= f.label :phone %>
-          <%= f.label :zip %>
-        </div>
+        <%= f.submit %>
 
-        <div class="column">
-          <%= f.text_field :lastname %>
-          <%= f.text_field :phone %>
-          <%= f.number_field :zip %>
-        </div>
+      <% end %>
 
-      </div>
-
-      <%= f.label :city %>
-      <%= f.text_field :city %>
-
-      <%= f.submit %>
-
-    <% end %>
+    </div>
 
   </div>
 
+  <%= render "pages/buttons/forward", text: "Contact", url: "contact" %>
 </div>
-
-<%= render "pages/buttons/forward", text: "Contact", url: "contact" %>

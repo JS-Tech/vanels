@@ -1,24 +1,25 @@
 #container section#page {
 
   .wrap {
-    display: flex;
-    justify-content: center;
     position: absolute;
     width: 100%;
-    transition: left 1s;
-    min-height: 100%;
+    min-height: 100vh;
   }
 
-  .wrap.current {
-    left: 0;
+  .slide {
+    transition: transform 1s linear;
   }
 
-  .wrap.next {
-    left: 100%;
+  .slide.current {
+    transform: translateX(0);
   }
 
-  .wrap.previous {
-    left: -100%;
+  .slide.next {
+    transform: translateX(100%);
+  }
+
+  .slide.previous {
+    transform: translateX(-100%);
   }
 
   .content {

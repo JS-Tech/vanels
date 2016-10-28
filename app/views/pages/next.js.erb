@@ -1,5 +1,5 @@
-var $current = $("#container section#page .wrap.current"),
-    $next = $("#container section#page .wrap.next");
+var $current = $("#container section#page .slide.current"),
+    $next = $("#container section#page .slide.next");
 
 // add new content
 $next.html('<%= j render "pages/#{params[:page]}" %>');
@@ -12,5 +12,5 @@ $next.removeClass("next").addClass("current");
 // clean
 setTimeout(function() {
   $current.remove();
-  $('<div class="wrap next"></div>').insertAfter($next);
+  $('<div class="slide next"></div>').insertAfter($next);
 }, 1000);

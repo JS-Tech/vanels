@@ -1,5 +1,5 @@
-var $current = $("#container section#page .wrap.current"),
-    $previous = $("#container section#page .wrap.previous");
+var $current = $("#container section#page .slide.current"),
+    $previous = $("#container section#page .slide.previous");
 
 // add new content
 $previous.html('<%= j render "pages/#{params[:page]}" %>');
@@ -12,5 +12,5 @@ $previous.removeClass("previous").addClass("current");
 // clean
 setTimeout(function() {
   $current.remove();
-  $('<div class="wrap previous"></div>').insertBefore($previous);
+  $('<div class="slide previous"></div>').insertBefore($previous);
 }, 1000);

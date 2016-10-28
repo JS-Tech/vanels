@@ -1,38 +1,40 @@
-<%= render "pages/buttons/backward", text: "Visiter", url: "visit" %>
+<div class="wrap details">
+  <%= render "pages/buttons/backward", text: "Visiter", url: "visit" %>
 
-<div class="content">
-  <h1>Détail</h1>
-  <h2>Caractéristiques</h2>
-  <table>
-    <tr>
-      <td>surface</td><td>80m2</td>
-    </tr>
-    <tr>
-      <td>parking</td><td>10 places</td>
-    </tr>
-    <tr>
-      <td>accès</td><td>escalier</td>
-    </tr>
-    <tr>
-      <td>n pièces</td><td>5</td>
-    </tr>
-    <tr>
-      <td>bar</td><td>Lave-vaisselle, tireuse, services, ...</td>
-    </tr>
-  </table>
-  <h2>Documents</h2>
-  <p>Contrat de location:<br>
-    <%= link_to "#" do %>
-      <%= image_tag image_url("details/file.svg"), class: "doc" %>
-    <% end %>
-  </p>
-  <p>Fiche de réservation:<br>
-    <%= link_to "#" do %>
-      <%= image_tag image_url("details/file.svg"), class: "doc" %>
-    <% end %>
-  </p>
-  <h2>Accès</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2738.3840719716477!2d7.100035412513048!3d46.65867788826081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e63dcbcb98707%3A0x2481337d9cca5fa1!2sRoute+du+Vanel+80%2C+1647+Corbi%C3%A8res!5e0!3m2!1sen!2sch!4v1477608124063" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <div class="content">
+    <h1>Détail</h1>
+    <h2>Caractéristiques</h2>
+    <table>
+      <tr>
+        <td>surface</td><td>80m2</td>
+      </tr>
+      <tr>
+        <td>parking</td><td>10 places</td>
+      </tr>
+      <tr>
+        <td>accès</td><td>escalier</td>
+      </tr>
+      <tr>
+        <td>n pièces</td><td>5</td>
+      </tr>
+      <tr>
+        <td>bar</td><td>Lave-vaisselle, tireuse, services, ...</td>
+      </tr>
+    </table>
+    <h2>Documents</h2>
+    <p>Contrat de location:<br>
+      <%= link_to "#" do %>
+        <%= image_tag image_url("details/file.svg"), class: "doc" %>
+      <% end %>
+    </p>
+    <p>Fiche de réservation:<br>
+      <%= link_to "#" do %>
+        <%= image_tag image_url("details/file.svg"), class: "doc" %>
+      <% end %>
+    </p>
+    <h2>Accès</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2738.3840719716477!2d7.100035412513048!3d46.65867788826081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e63dcbcb98707%3A0x2481337d9cca5fa1!2sRoute+du+Vanel+80%2C+1647+Corbi%C3%A8res!5e0!3m2!1sen!2sch!4v1477608124063" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <%= render "pages/buttons/forward", text: "Agenda", url: "agenda" %>
 </div>
-
-<%= render "pages/buttons/forward", text: "Agenda", url: "agenda" %>
