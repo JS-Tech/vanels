@@ -1,2 +1,3 @@
 // register a new event to be fired when a new page is loaded
-var pageLoad = new Event("page:load");
+var pageFetch = new Event("page:fetch"),
+    pageLoad = new Event("page:load");

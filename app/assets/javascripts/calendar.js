@@ -1,4 +1,4 @@
-$(document).on("turbolinks:load page:load", function() {
+$(document).on("turbolinks:load page:fetch", function() {
 
   $('#calendar').fullCalendar({
     dayClick: function(date) {

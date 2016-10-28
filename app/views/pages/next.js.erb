@@ -3,7 +3,7 @@ var $current = $("#container section#page .slide.current"),
 
 // add new content
 $next.html('<%= j render "pages/#{params[:page]}" %>');
-document.dispatchEvent(pageLoad);
+document.dispatchEvent(pageFetch);
 
 // slide
 $current.removeClass("current").addClass("previous");
@@ -13,4 +13,5 @@ $next.removeClass("next").addClass("current");
 setTimeout(function() {
   $current.remove();
   $('<div class="slide next"></div>').insertAfter($next);
+  document.dispatchEvent(pageLoad);
 }, 1000);

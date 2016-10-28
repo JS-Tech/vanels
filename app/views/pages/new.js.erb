@@ -1,3 +1,9 @@
 $("#container section#page .slide.current").html('<%= j render "pages/#{params[:page]}" %>');
 
+document.dispatchEvent(pageFetch);
+
+var height = $("section#home").height();
+
+window.scrollTo(0, height);
+
 document.dispatchEvent(pageLoad);
