@@ -69,6 +69,8 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
+    lightbox2-rails (2.8.2.1)
+      railties (>= 3.1)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -170,6 +172,7 @@ DEPENDENCIES
   fullcalendar-rails
   jbuilder (~> 2.5)
   jquery-rails
+  lightbox2-rails
   listen (~> 3.0.5)
   momentjs-rails
   puma (~> 3.0)
@@ -185,4 +188,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.13.2
+   1.13.6

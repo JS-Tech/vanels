@@ -1,0 +1,17 @@
+svg.map {
+    rect {
+      fill: #f76868;
+    }
+    .room {
+      cursor: pointer;
+      &:hover text {
+        opacity: 1 !important;
+      }
+    }
+    text {
+      opacity: 0.5 !important;
+    }
+}
+html.fancybox-lock {
+    overflow: visible !important;
+}
