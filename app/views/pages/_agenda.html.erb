@@ -12,7 +12,7 @@
       <%= form_for Reservation.new, remote: true do |f| %>
 
         <%= f.label :date %>
-        <%= f.date_field :date %>
+        <%= f.date_field :date, readonly: true %>
 
         <%= f.label :description %>
         <%= f.text_area :description, cols: 40, rows: 5 %>

@@ -1,4 +1,11 @@
 class ReservationsController < ApplicationController
+  layout "admin", only: :index
+  http_basic_authenticate_with name: "admin", password: "12341", only: :index
+
+  def index
+    @table = Table.new(self, Reservation, nil, buttons: false)
+    @table.respond
+  end
 
   def create
     @reservation = Reservation.new(reservation_params)
