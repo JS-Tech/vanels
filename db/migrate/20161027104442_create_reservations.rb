@@ -10,6 +10,7 @@ class CreateReservations < ActiveRecord::Migration[5.0]
       t.string :phone
       t.date :date
       t.string :description
+      t.boolean :payed, default: false
 
       t.timestamps
     end

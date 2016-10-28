@@ -18,3 +18,4 @@
 //= require fullcalendar/lang/fr
 //= require events
 //= require_tree .
+//= require snaptable
