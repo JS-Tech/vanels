@@ -2,7 +2,7 @@ $("#container section#page .slide.current").html('<%= j render "pages/#{params[:
 
 document.dispatchEvent(pageFetch);
 
-var height = $("section#home").height();
+var height = $("section#home").height() - $("header").height();
 
 window.scrollTo(0, height);
 

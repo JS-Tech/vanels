@@ -40,6 +40,13 @@
         color: #fff;
         padding: 6px 17px;
       }
+      a.current {
+        border: 2px solid #fff;
+      }
+      a:not(.current):hover {
+        border-bottom: 2px solid #fff;
+        margin-bottom: -2px;
+      }
     }
   }
 

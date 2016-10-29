@@ -9,7 +9,7 @@ function initMap() {
   });
 
   var infowindow = new google.maps.InfoWindow({
-    content: "<h3>Vanel's CLub</h3><p>Caveaux - Jazz Club - Evénements<br>Route du Vanel 8, Corbières</p>"
+    content: "<h3>Vanel's CLub</h3><p>Caveaux - Jazz Club - Evénements<br>Route du Vanel 80, Corbières</p>"
   });
 
   var marker = new google.maps.Marker({
@@ -23,7 +23,7 @@ function initMap() {
 
 $(document).on("turbolinks:load page:load", function() {
 
-  if (window.location.pathname == "/details") {
+  if (window.location.pathname == "/details" || window.location.pathname == "/contact") {
     var script = document.createElement('script');
     script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD60duPZedG18yBTTXvBSwsPPFE0aLqVP8&callback=initMap";
     document.body.append(script);

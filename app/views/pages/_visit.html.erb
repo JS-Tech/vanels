@@ -5,6 +5,17 @@
       Lorem ipsum dolor sit amet, posuere eros, vitae tempus mi eros nec metus.
     </p>
 
+    <p class="preview">
+      <%= link_to image_tag("gallery/preview/outside_thumb.jpg"), image_url("gallery/preview/outside.jpg"), data: {"lightbox": "prev"} %>
+      <%= link_to image_tag("gallery/preview/prev1_thumb.jpg"), image_url("gallery/preview/prev1.jpg"), data: {"lightbox": "prev"} %>
+      <%= link_to image_tag("gallery/preview/prev2_thumb.jpg"), image_url("gallery/preview/prev2.jpg"), data: {"lightbox": "prev"} %>
+      <%= link_to image_tag("gallery/preview/prev3_thumb.jpg"), image_url("gallery/preview/prev3.jpg"), data: {"lightbox": "prev"} %>
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, posuere eros, vitae tempus mi eros nec metus.
+    </p>
+
     <%= render "map" %>
 
   </div>
